@@ -246,8 +246,8 @@ echo -e "   \e[92m[\e[91m~\e[92m]\e[93m Given number contains non-numeric charac
 echo ""
 exit
 fi
-output=$(cat .output.txt | grep "Please provide 10 digit number")
-if [[ $output = "Please provide 10 digit number" ]]
+output=$(cat .output.txt | grep "Please provide 9 digit number")
+if [[ $output = "Please provide 9 digit number" ]]
 then
 echo ""
 echo ""
@@ -256,7 +256,7 @@ echo ""
 echo ""
 printf "   \e[1;92m[\e[91m~\e[92m]\e[93m Please check the number\e[1;91m ( ͡╥ ͜ʖ ͡╥)\e[93m\n"
 echo ""
-echo -e "   \e[92m[\e[91m~\e[92m]\e[93m Length of the given number is not 10 !!\e[93m"
+echo -e "   \e[92m[\e[91m~\e[92m]\e[93m Length of the given number is not 9 !!\e[93m"
 echo ""
 exit
 fi
@@ -272,7 +272,7 @@ printf "  $WHITE                      ▂▄▅███\e[1;31mXLR8\e[1;0m█�
 printf "  $RED                    I███████████████████]\n"
 printf "  $WHITE                      ◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙◤...\n"
 echo ""
-printf "             ~~~\e[1;92m Attack Started On +91$targett \e[0m~~~"
+printf "             ~~~\e[1;92m Attack Started On +994$targett \e[0m~~~"
 sleep 1
 echo ""
 echo ""
@@ -319,7 +319,7 @@ read text
 echo ""
 
 curl -X POST https://textbelt.com/text \
-       --data-urlencode phone='91$smstarget' \
+       --data-urlencode phone='994$smstarget' \
        --data-urlencode message='$text' \
        -d key=textbelt -s > records.txt
 
